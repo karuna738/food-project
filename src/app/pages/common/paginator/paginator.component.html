@@ -1,0 +1,51 @@
+
+<div class="pagination flex" [ngSwitch]="type">
+  <div class="page-count row">
+         <p>{{'Additional.Displaying'|translate}} <span> {{page}}-{{currentPagecal}}
+         </span> {{'Additional.out of'|translate}} <span>{{totalItems}}</span></p>
+  </div>
+  <div class="page-count flex" *ngSwitchCase="'numbers'">
+    <button
+      class="icon-button" 
+      [disabled]="currentPage === 1"
+      (click)="goToPreviousPage()">
+      <img src="image/icon-arrow-left-sharp-pag.svg" alt="" />
+    </button> 
+    <ng-container *ngFor="let page of pages" class="page-count flex">
+      <button
+        [ngClass]="{
+          active: currentPage === page,
+          inactive: currentPage !== page
+        }"
+        (click)="goToPage(page)"
+      >
+        {{ page }}
+      </button>
+    </ng-container>
+    <button
+      class="icon-button"
+      [disabled]="currentPage === totalPages"
+      (click)="goToNextPage()"
+    >
+      <img src="image/icon-arrow-right-sharp-pag.svg" alt="" />
+    </button>
+    <p>Page</p>
+    <input type="number" appSpcaeValidation [value]="currentPage" (input)="Gotogivenpage($event.target)" />
+    <div class="page-info newpage"> of {{ totalPages }}</div>
+  </div>
+
+  <div *ngSwitchCase="'fullnumbers'">
+    <ng-container *ngFor="let page of totalPageItems; let i = index">
+      <button
+        class="number-button"
+        [disabled]="currentPage === page"
+        (click)="goToPage(page)"
+      >
+        {{ page }}
+      </button>
+    </ng-container>
+  </div>
+
+</div> 
+
+

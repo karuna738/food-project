@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Farm-inactive" transform="translate(-19413 -6165)">
+    <rect id="Rectangle_5288" data-name="Rectangle 5288" width="16" height="16" transform="translate(19413 6165)" fill="#023a43" opacity="0"/>
+    <g id="Group_16434" data-name="Group 16434" transform="translate(19413.559 6165.56)">
+      <rect id="Rectangle_4750" data-name="Rectangle 4750" width="14.88" height="14.88" transform="translate(0 0)" fill="none"/>
+      <g id="Group_16371" data-name="Group 16371" transform="translate(1.86 0)">
+        <g id="g3589" transform="translate(5.58 5.456)">
+          <path id="path3591" d="M-146.4,0a3.514,3.514,0,0,0-3.551,3.472A3.514,3.514,0,0,0-146.4,0Z" transform="translate(149.956)" fill="none" stroke="#656f7d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g3593" transform="translate(4.541 1.984)">
+          <path id="path3595" d="M-42.855,0a3.419,3.419,0,0,0,0,4.91A3.419,3.419,0,0,0-42.855,0Z" transform="translate(43.895)" fill="none" stroke="#656f7d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g3597" transform="translate(2.029 5.456)">
+          <path id="path3599" d="M0,0A3.514,3.514,0,0,1,3.551,3.472,3.514,3.514,0,0,1,0,0Z" fill="none" stroke="#656f7d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g3605" transform="translate(0 0)">
+          <path id="path3607" d="M-230.063-627.785s-5.58-5.047-5.58-9.424a5.522,5.522,0,0,1,5.58-5.456,5.522,5.522,0,0,1,5.58,5.456C-224.483-632.832-230.063-627.785-230.063-627.785Z" transform="translate(235.643 642.665)" fill="none" stroke="#656f7d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

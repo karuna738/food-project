@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5441" data-name="Rectangle 5441" width="20" height="20" transform="translate(790 7182)" fill="#fff" stroke="#fff" stroke-width="1.2"/>
+    </clipPath>
+  </defs>
+  <g id="Main_-_Traceability" data-name="Main - Traceability" transform="translate(-790 -7182)" clip-path="url(#clip-path)">
+    <g id="shipment-tracking-stroke-rounded" transform="translate(788.837 7180.837)">
+      <path id="Path_39383" data-name="Path 39383" d="M7.442,20.465H5.581c-1.754,0-2.631,0-3.176-.545S1.86,18.5,1.86,16.744v-1.86c0-1.754,0-2.631.545-3.176s1.422-.545,3.176-.545h1.86c1.754,0,2.631,0,3.176.545s.545,1.422.545,3.176v1.86c0,1.754,0,2.631-.545,3.176S9.2,20.465,7.442,20.465Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_39384" data-name="Path 39384" d="M5.581,13.953h1.86" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_39385" data-name="Path 39385" d="M16.744,1.86a3.766,3.766,0,0,0-2.326,6.692,11.491,11.491,0,0,1,1.927,2.328c.229.375.552.375.8,0a12.86,12.86,0,0,1,1.927-2.328A3.766,3.766,0,0,0,16.744,1.86Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_39386" data-name="Path 39386" d="M16.744,13.953v2.791c0,1.754,0,2.631-.436,3.176-.416.52-1.075.544-2.355.545" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_39387" data-name="Path 39387" d="M16.751,5.581h-.008" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

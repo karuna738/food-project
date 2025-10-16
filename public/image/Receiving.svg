@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Receiving" transform="translate(3862 -2416)">
+    <rect id="Rectangle_4061" data-name="Rectangle 4061" width="20" height="20" transform="translate(-3862 2416)" fill="none"/>
+    <g id="Group_3545" data-name="Group 3545" transform="translate(0.8 0.7)">
+      <g id="Group_3544" data-name="Group 3544" transform="translate(-26.025 -0.945)">
+        <path id="Path_5614" data-name="Path 5614" d="M-3828.168,2430.945l-7.808-.141v-8.96l3.948-4.9h7.361l3.668,4.9v3.428" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_5615" data-name="Path 5615" d="M-3828.477,2416.945v5.37h7.512" transform="translate(-0.01)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(-3853 2425)" fill="none" stroke="#fff" stroke-width="1">
+        <circle cx="5" cy="5" r="5" stroke="none"/>
+        <circle cx="5" cy="5" r="4.5" fill="none"/>
+      </g>
+      <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(-3857.5 2420.5)">
+        <path id="Path_5616" data-name="Path 5616" d="M18,7.5v4" transform="translate(-8.5 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_5617" data-name="Path 5617" d="M11.5,18l-2,1.91L7.5,18" transform="translate(0 -8.41)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
