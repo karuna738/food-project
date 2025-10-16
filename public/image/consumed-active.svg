@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5289" data-name="Rectangle 5289" width="16" height="16" transform="translate(19444 6165)" fill="#fff" stroke="#000" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="path1206" d="M0-16H16V0H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="consumed-active" transform="translate(-19444 -6165)" opacity="0.999" clip-path="url(#clip-path)">
+    <g id="g1200" transform="translate(19444 6181)">
+      <g id="g1202">
+        <g id="g1204" clip-path="url(#clip-path-2)">
+          <g id="g1210" transform="translate(10.128 -8)">
+            <path id="path1212" d="M0,0A4.824,4.824,0,0,1-2.128,4a4.808,4.808,0,0,1-2.7.826A4.83,4.83,0,0,1-9.659,0,4.83,4.83,0,0,1-4.83-4.83,4.808,4.808,0,0,1-2.128-4,4.824,4.824,0,0,1,0,0Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <g id="g1214" transform="translate(15.531 -8)">
+            <path id="path1216" d="M0,0A4.83,4.83,0,0,1-4.83,4.83,4.808,4.808,0,0,1-7.531,4,4.824,4.824,0,0,0-5.4,0,4.824,4.824,0,0,0-7.531-4a4.808,4.808,0,0,1,2.7-.826A4.83,4.83,0,0,1,0,0Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <g id="g1218" transform="translate(6.98 -8)">
+            <path id="path1220" d="M0,0H6.051L5.083.967" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <g id="g1222" transform="translate(13.031 -8)">
+            <path id="path1224" d="M0,0-.967-.967" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

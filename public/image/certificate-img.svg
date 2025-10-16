@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5235" data-name="Rectangle 5235" width="20" height="20" transform="translate(405 1705)" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_52" data-name="Mask Group 52" transform="translate(-405 -1705)" clip-path="url(#clip-path)">
+    <g id="certificate_2_" data-name="certificate (2)" transform="translate(406.467 1705.772)">
+      <g id="Group_16391" data-name="Group 16391" transform="translate(3.166 3.85)">
+        <line id="Line_419" data-name="Line 419" x2="4.731" transform="translate(0 7.159)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Line_420" data-name="Line 420" x2="4.731" transform="translate(0 10.738)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Line_421" data-name="Line 421" x2="1.996" transform="translate(0 3.579)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Line_422" data-name="Line 422" x2="1.996" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+      <g id="Group_16392" data-name="Group 16392" transform="translate(10.841 8.796)">
+        <circle id="Ellipse_144" data-name="Ellipse 144" cx="3.112" cy="3.112" r="3.112" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Path_39094" data-name="Path 39094" d="M20.423,17.779v3.46a.941.941,0,0,1-1.475.775l-.923-.636-.923.636a.941.941,0,0,1-1.475-.775v-3.46" transform="translate(-14.913 -12.54)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+      <path id="Path_39095" data-name="Path 39095" d="M15.714,5.827V4.368L12.284.937H4.1A2.344,2.344,0,0,0,1.761,3.281v13.75A2.344,2.344,0,0,0,4.1,19.375H13.37a2.355,2.355,0,0,0,.472-.048" transform="translate(-1.761 -0.937)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

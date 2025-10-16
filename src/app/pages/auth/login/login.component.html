@@ -1,0 +1,56 @@
+<div class="login-wrapper">
+    <div class="login-inner">
+
+        <form>
+            <div class="login-form">
+                <div class="login-logo">
+                    <img src="image/logo.svg" alt="">
+                    <h3>Welcome back</h3>
+                </div>
+                <div class="input-field">
+                    <label>Enter Username*</label>
+                    <div class="floating-label ">
+                        <input class="floating-input" appSpcaeValidation type="text" placeholder="Enter Username">
+                        <!-- <span class="highlight"></span> -->
+                        <p>Username Required</p>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label>Enter Password*</label>
+                    <div class="floating-label">
+                        <input class="floating-input" type="{{ hidePassword ? 'password' : 'text' }}"
+                            placeholder="Enter Password" >
+                        <span class="password-toggle-icon" (click)="togglePasswordVisibility()">
+                            <img *ngIf="hidePassword" style="position: absolute;inset: 1rem 1rem auto auto;"
+                                class="password-toggle-icon" src="image/eye-closed.svg"
+                                alt="Toggle Password Visibility">
+                            <img *ngIf="!hidePassword" style="position: absolute;inset: 1rem 1rem auto auto;"
+                                class="password-toggle-icon" src="image/eye.svg"
+                                alt="Toggle Password Visibility">
+                        </span>
+
+                        <p>Password Required</p>
+                    </div>
+                </div>
+                <!-- <div class="input-field">
+                    <label> Enter Role*</label>
+                    <div class="input-group">
+                        <ng-select [items]="access" bindLabel="name" bindValue="type" placeholder="Choose Role"></ng-select>
+                    </div>
+                </div> -->
+                <button (click)="onsubmit()"> Submit </button>
+            </div>
+        </form>
+        <div class="login-col">
+            <div class="login-col-innr">
+                <img src="image/login-wrap-img.png" alt="">
+                <p>Give your Consumers the Trust they Deserve
+                    The Traceability System That Reveals the Story of the Food They Eat</p>
+            </div>
+            <a href=""> Foodtraze.com </a>
+            <div class="grass">
+                <img src="image/grass.svg" />
+            </div>
+        </div>
+    </div>
+</div>

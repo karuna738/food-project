@@ -1,0 +1,9 @@
+<svg width="47" height="32" viewBox="0 0 47 32" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#121212" stroke-width="1.333" fill="#FFF" x=".667" y=".667" width="45.667" height="30.667" rx="3.556"/>
+        <path d="M23.057 11.294c0-.346.28-.627.626-.627h13.77a.627.627 0 0 1 0 1.255h-13.77a.627.627 0 0 1-.626-.628zm.626 3.765h10.015a.627.627 0 0 0 0-1.255H23.683a.627.627 0 0 0 0 1.255zm13.77 1.882h-13.77a.627.627 0 0 0 0 1.255h13.77a.627.627 0 0 0 0-1.255zm-3.755 3.137H23.683a.627.627 0 0 0 0 1.255h10.015a.627.627 0 0 0 0-1.255z" fill="#121212" fill-rule="nonzero"/>
+        <text font-family="TimesNewRomanPSMT, Times New Roman" font-size="18.667" fill="#121212">
+                    <tspan x="8.854" y="22.333">T</tspan>
+                </text>
+    </g>
+</svg>

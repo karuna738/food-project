@@ -1,0 +1,224 @@
+<div>
+    <div *ngIf="list == 'admin'">
+        <aside>
+            <div class='aside-logo'>
+                <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo-white.svg' /> </a>
+            </div>
+            <div class='aside-nav'>
+                <!-- Dashboard -->
+                <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <span>{{'header.Dashboard'|translate}}</span>
+                </a>
+                <!--Producer  -->
+                <a [routerLink]="['/Admin/Producer']" [routerLinkActive]="'active'">
+                    <img src='image/producer.svg' />
+                    <img src='image/producer.svg' />
+                    <span>{{'commonlist.Producer'|translate}}</span>
+                </a>
+
+                <!-- Processor  -->
+                <a [routerLink]="['/Admin/Processor']" [routerLinkActive]="'active'">
+                    <img src='image/processor.svg' />
+                    <img src='image/processor.svg' />
+                    <span>{{'commonlist.Processor'|translate}}</span>
+                </a>
+
+                <!--Distributor  -->
+                <a [routerLink]="['/Admin/Distributor']" [routerLinkActive]="'active'">
+                    <img src='image/distributor.svg' />
+                    <img src='image/distributor.svg' />
+                    <span>{{'commonlist.Distributor'|translate}}</span>
+                </a>
+
+
+                <!-- Retailer -->
+                <a [routerLink]="['/Admin/Retailer']" [routerLinkActive]="'active'">
+                    <img src='image/retailer.svg' />
+                    <img src='image/retailer.svg' />
+                    <span>{{'commonlist.Retailer'|translate}}</span>
+                </a>
+                <!-- Settings -->
+                <a [routerLink]="['/settings']" [routerLinkActive]="'active'">
+                    <img src='image/settings-on.svg' />
+                    <img src='image/settings-on.svg' />
+                    <span>{{'commonlist.Settings'|translate}}</span>
+                </a>
+
+                <!-- Event -->
+                <a [routerLink]="['/Admin/Event']" [routerLinkActive]="'active'">
+                    <img src='image/event-on.svg' />
+                    <img src='image/event-on.svg' />
+                    <span>{{'commonlist.Events'|translate}}</span>
+                </a>
+
+            </div>
+        </aside>
+    </div>
+    <div *ngIf="list == 'Producer'">
+        <aside>
+            <div class='aside-logo'>
+                <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo-white.svg' /> </a>
+            </div>
+            <div class='aside-nav'>
+                <!-- Dashboard -->
+                <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <span>{{'header.Dashboard'|translate}}</span>
+                </a>
+
+                <!--Product  -->
+                <a [routerLink]="['/producer/product']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <span>{{'commonlist.Product'|translate}}</span>
+                </a>
+
+                <!-- Events -->
+                <a [routerLink]="['/producer/events']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <span>{{'commonlist.Events'|translate}}</span>
+                </a>
+
+                <!-- Traceblity -->
+                <a [routerLink]="['/producer/traceblity']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <span>{{'commonlist.Traceblity'|translate}}</span>
+                </a>
+                <!-- Settings -->
+                <a [routerLink]="['/settings']" [routerLinkActive]="'active'">
+                    <img src='image/settings-on.svg' />
+                    <img src='image/settings-on.svg' />
+                    <span>{{'commonlist.Settings'|translate}}</span>
+                </a>
+
+            </div>
+        </aside>
+    </div>
+    <div *ngIf="list == 'Processing Plant'">
+        <aside>
+            <div class='aside-logo'>
+                <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo-white.svg' /> </a>
+            </div>
+            <div class='aside-nav'>
+                <!-- Dashboard  -->
+                <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <span>{{'header.Dashboard'|translate}}</span> 
+                </a>
+                <!-- Product -->
+                <a [routerLink]="['/processor/product']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <span>{{'commonlist.Product'|translate}}</span>
+                </a>
+                <!-- Event -->
+                <a [routerLink]="['/processor/events']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <span>{{'commonlist.Events'|translate}}</span>
+                </a>
+                <!-- Traceblity -->
+                <a [routerLink]="['/processor/traceblity']" [routerLinkActive]="'active'"> 
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <span>{{'commonlist.Traceblity'|translate}}</span>
+                </a>
+
+
+                <a [routerLink]="['/settings']" [routerLinkActive]="'active'">
+                    <img src='image/settings-on.svg' />
+                    <img src='image/settings-on.svg' />
+                    <span>{{'commonlist.Settings'|translate}}</span>
+                </a>
+
+            </div>
+        </aside>
+    </div>
+    <div *ngIf="list == 'Retailer'">
+        <aside>
+            <div class='aside-logo'>
+                <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo-white.svg' /> </a>
+            </div>
+            <div class='aside-nav'>
+                <!-- Dashboard -->
+                <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <span>{{'header.Dashboard'|translate}}</span>
+                </a>
+                <!-- Product -->
+                <a [routerLink]="['/retailer/product']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <span>{{'commonlist.Product'|translate}}</span>
+                </a>
+                <!-- events -->
+                <a [routerLink]="['/retailer/events']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <span>{{'commonlist.Events'|translate}}</span>
+                </a>
+                <!--Traceblity  -->
+                <a [routerLink]="['/retailer/traceblity']" [routerLinkActive]="'active'"> 
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <span>{{'commonlist.Traceblity'|translate}}</span>
+                </a>
+                <!-- Settings -->
+                <a [routerLink]="['/settings']" [routerLinkActive]="'active'">
+                    <img src='image/settings-on.svg' />
+                    <img src='image/settings-on.svg' />
+                    <span>{{'commonlist.Settings'|translate}}</span>
+                </a>
+            </div>
+        </aside>
+    </div>
+    <div *ngIf="list == 'Distribution Center'">
+        <aside>
+            <div class='aside-logo'>
+                <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo-white.svg' /> </a>
+            </div>
+            <div class='aside-nav'>
+                 <!-- Dashboard -->
+                <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <img src="image/new-Images/MainDashboard.svg" />
+                    <span>{{'header.Dashboard'|translate}}</span>
+                </a>
+                <!-- Product -->
+                <a [routerLink]="['/distributer/product']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <img src="image/new-Images/MainProduct.svg" />
+                    <span>{{'commonlist.Product'|translate}}</span>
+                </a>
+                <!-- events -->
+                 <a [routerLink]="['/distributer/events']" [routerLinkActive]="'active'">
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <img src="image/new-Images/MainEvents.svg" />
+                    <span>{{'commonlist.Events'|translate}}</span>
+                </a>
+                
+                <!--Traceblity  -->
+                <a [routerLink]="['/distributer/traceblity']" [routerLinkActive]="'active'"> 
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <img src="image/new-Images/MainTraceability.svg" />
+                    <span>{{'commonlist.Traceblity'|translate}}</span>
+                </a>
+
+
+                <a [routerLink]="['/settings']" [routerLinkActive]="'active'">
+                    <img src='image/settings-on.svg' />
+                    <img src='image/settings-on.svg' />
+                    <span>{{'commonlist.Settings'|translate}}</span>
+                </a>
+
+            </div>
+        </aside>
+    </div>
+</div>

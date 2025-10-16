@@ -1,0 +1,68 @@
+
+<div>
+    <header>
+        <div class='header-lft flexx'>
+            <!-- <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo.svg' /> </a> -->
+            <div *ngIf="userName == 'Admin'">
+                <h3>👋 {{'header.Welcome'|translate}}, <span>{{'header.admin'|translate}}</span></h3>
+            </div>
+            <div *ngIf="userName !== 'Admin'">
+                <h3>👋 {{'header.Welcome'|translate}}, <span>{{userName}}</span></h3>
+            </div>
+
+            
+        </div>
+        <div class='header-rht flexx'>
+            <div *ngIf="userName !== 'Admin'">
+                <h3> [{{'header.Organisation'|translate}}: <span> {{admin | titlecase}} </span>] </h3>
+            </div>
+            <div class="btn-group btn-group-language">
+                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>
+                        <img *ngIf="languvage == 'English'" src="image/uk-flag.svg" alt="" class="flag">
+                        <img *ngIf="languvage == 'Spanish'" src="image/spanish-flag.svg" alt="" class="flag"> 
+                        {{languvage}} 
+                        <img src="image/arrow-drop.svg" alt="" class="drop-arrow">
+                    </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                        <div class="radio">
+                            <input id="radio-1" name="radio" type="radio" [checked]="checked1">
+                            <label for="radio-1" class="radio-label" (click)="useLanguage('eng')"><img src="image/uk-flag.svg" alt=""> {{'key.English' | translate }}</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <input id="radio-2" name="radio" type="radio"  [checked]="checked2">
+                            <label  for="radio-2" class="radio-label" (click)="useLanguage('span')"><img src="image/spanish-flag.svg" alt=""> {{'key.Spanish' | translate }}</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+  
+            <div class="btn-group">
+                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class='profile-name-detail'>
+                        <span *ngIf="!uploadImage"> <img src='image/avatar.png' /> </span>
+                        <span *ngIf="uploadImage"><img [src]="base64Data" alt=""> </span>
+                    </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <div class="profile-drop-details">
+                        <span *ngIf="!uploadImage"> <img src='image/avatar.png' /> </span>
+                        <span *ngIf="uploadImage"><img [src]="base64Data" alt=""> </span>
+                        <div class="profile-drop-details-content">
+                            <h3>Hi, {{userName}}</h3>
+                            <p>{{admin | titlecase}}</p>
+                        </div>
+                    </div>
+                    <li><button class="dropdown-item" type="button" [routerLink]="['/settings/profile']"> <img src="image/profile.svg" alt="">{{'header.MyProfile'|translate}}</button></li>
+                    <li><button class="dropdown-item" type="button" [routerLink]="['/settings/password']" > 
+                        <img src="image/lock-password.svg" alt="">{{'commonlist.ChangePassword'|translate}}</button></li>
+                    <li><button class="dropdown-item" type="button" (click)="logout()"> <img src="image/logout.svg" alt="">{{'header.Logout'|translate}}</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>

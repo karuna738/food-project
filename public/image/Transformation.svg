@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4057" data-name="Rectangle 4057" width="20" height="20" transform="translate(84 170)" fill="#fff" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Transformation" transform="translate(-84 -170)" clip-path="url(#clip-path)">
+    <g id="layer1" transform="translate(84 171.857)">
+      <path id="circle4261" d="M216.235,95.307a.588.588,0,0,0-.417,1l2.764,2.774h-17.4a.588.588,0,1,0,0,1.176h17.407l-2.767,2.775a.588.588,0,1,0,.834.828l3.764-3.777a.588.588,0,0,0,0-.829l-3.764-3.777a.588.588,0,0,0-.417-.173Zm-11.3,7.554a.588.588,0,0,0-.412.175L200.77,106.8q-.019.019-.036.04a.578.578,0,0,0-.047.062.6.6,0,0,0-.036.062q-.01.022-.018.045a.592.592,0,0,0-.034.124q0,.028-.007.056c0,.012,0,.024,0,.037s0,.022,0,.033a.8.8,0,0,0,.041.177c.006.016.013.031.02.046a.483.483,0,0,0,.082.123q.017.022.037.042l3.755,3.768a.588.588,0,1,0,.834-.829l-2.767-2.774H220a.588.588,0,0,0,0-1.176H202.6l2.764-2.774a.59.59,0,0,0-.421-1Z" transform="translate(-200.588 -95.307)" fill="#fff" stroke="#fff" stroke-width="0.1"/>
+    </g>
+  </g>
+</svg>

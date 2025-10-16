@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4085" data-name="Rectangle 4085" width="20" height="20" transform="translate(84 78)" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_39" data-name="Mask Group 39" transform="translate(-84 -78)" clip-path="url(#clip-path)">
+    <g id="menu_7_" data-name="menu (7)" transform="translate(84.25 78.25)">
+      <g id="Group_13901" data-name="Group 13901">
+        <path id="Path_1873" data-name="Path 1873" d="M7.719,6.5h-6.5A1.22,1.22,0,0,1,0,5.281V1.219A1.22,1.22,0,0,1,1.219,0h6.5A1.22,1.22,0,0,1,8.938,1.219V5.281A1.22,1.22,0,0,1,7.719,6.5ZM1.219.813a.407.407,0,0,0-.406.406V5.281a.407.407,0,0,0,.406.406h6.5a.407.407,0,0,0,.406-.406V1.219A.407.407,0,0,0,7.719.813Z" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+      <g id="Group_13902" data-name="Group 13902" transform="translate(0 8.125)">
+        <path id="Path_1874" data-name="Path 1874" d="M7.719,18.875h-6.5A1.22,1.22,0,0,1,0,17.656V8.719A1.22,1.22,0,0,1,1.219,7.5h6.5A1.22,1.22,0,0,1,8.938,8.719v8.938A1.22,1.22,0,0,1,7.719,18.875ZM1.219,8.312a.407.407,0,0,0-.406.406v8.938a.407.407,0,0,0,.406.406h6.5a.407.407,0,0,0,.406-.406V8.719a.407.407,0,0,0-.406-.406Z" transform="translate(0 -7.5)" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+      <g id="Group_13903" data-name="Group 13903" transform="translate(10.563 13)">
+        <path id="Path_1875" data-name="Path 1875" d="M17.469,18.5h-6.5A1.22,1.22,0,0,1,9.75,17.281V13.219A1.22,1.22,0,0,1,10.969,12h6.5a1.22,1.22,0,0,1,1.219,1.219v4.063A1.22,1.22,0,0,1,17.469,18.5Zm-6.5-5.688a.407.407,0,0,0-.406.406v4.063a.407.407,0,0,0,.406.406h6.5a.407.407,0,0,0,.406-.406V13.219a.407.407,0,0,0-.406-.406Z" transform="translate(-9.75 -12)" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+      <g id="Group_13904" data-name="Group 13904" transform="translate(10.563)">
+        <path id="Path_1876" data-name="Path 1876" d="M17.469,11.375h-6.5A1.22,1.22,0,0,1,9.75,10.156V1.219A1.22,1.22,0,0,1,10.969,0h6.5a1.22,1.22,0,0,1,1.219,1.219v8.938A1.22,1.22,0,0,1,17.469,11.375ZM10.969.813a.407.407,0,0,0-.406.406v8.938a.407.407,0,0,0,.406.406h6.5a.407.407,0,0,0,.406-.406V1.219a.407.407,0,0,0-.406-.406Z" transform="translate(-9.75)" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

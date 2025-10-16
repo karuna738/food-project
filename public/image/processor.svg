@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5284" data-name="Rectangle 5284" width="20" height="20" transform="translate(611 100)" fill="#fff" stroke="#fff" stroke-width="1.3"/>
+    </clipPath>
+  </defs>
+  <g id="processor" transform="translate(-611 -100)" clip-path="url(#clip-path)">
+    <g id="Settings" transform="translate(611.43 100.43)">
+      <path id="Path_39277" data-name="Path 39277" d="M20.344,11.965V9.582l-1.4-.452a8.291,8.291,0,0,0-1.235-2.971l.641-1.282L16.67,3.192l-1.282.641A8.292,8.292,0,0,0,12.417,2.6l-.452-1.4H9.582L9.13,2.6A8.291,8.291,0,0,0,6.159,3.833L4.877,3.192,3.192,4.877l.641,1.282A8.292,8.292,0,0,0,2.6,9.13l-1.4.452v2.383l1.4.452a8.291,8.291,0,0,0,1.235,2.971L3.192,16.67l1.685,1.685,1.282-.641A8.292,8.292,0,0,0,9.13,18.948l.452,1.4h2.383l.452-1.4a8.291,8.291,0,0,0,2.971-1.235l1.282.641,1.685-1.685-.641-1.282a8.292,8.292,0,0,0,1.235-2.971Z" transform="translate(-1.203 -1.203)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
+      <line id="Line_424" data-name="Line 424" y1="6.552" transform="translate(9.57 8.975)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
+      <path id="Path_39278" data-name="Path 39278" d="M23.711,25.141c-2.366-1.183-2.383-2.167-2.383-2.736,0-1.7.971-3,2.383-4.412,1.415,1.415,2.383,2.725,2.383,4.412C26.094,22.961,26.075,23.959,23.711,25.141Z" transform="translate(-14.141 -11.997)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
+      <circle id="Ellipse_305" data-name="Ellipse 305" cx="5.957" cy="5.957" r="5.957" transform="translate(3.614 3.614)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
+    </g>
+  </g>
+</svg>

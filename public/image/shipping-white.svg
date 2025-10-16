@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4054" data-name="Rectangle 4054" width="20" height="20" transform="translate(1258 3581)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_33" data-name="Mask Group 33" transform="translate(-1258 -3581)" clip-path="url(#clip-path)">
+    <g id="fast" transform="translate(1258 3579.333)">
+      <path id="Path_1853" data-name="Path 1853" d="M5.417,15.833H3.75a.417.417,0,1,1,0-.833H5.417a.417.417,0,1,1,0,.833Z" fill="#fff"/>
+      <path id="Path_1854" data-name="Path 1854" d="M18.958,15.833H17.917a.417.417,0,0,1,0-.833h.7l.562-2.993a2.916,2.916,0,0,0-2.924-2.84H13.514L12.188,15h2.4a.417.417,0,1,1,0,.833H11.667a.417.417,0,0,1-.407-.508l1.515-6.667a.416.416,0,0,1,.407-.325H16.25A3.755,3.755,0,0,1,20,12.083l-.633,3.41A.415.415,0,0,1,18.958,15.833Z" fill="#fff"/>
+      <path id="Path_1855" data-name="Path 1855" d="M16.25,17.5a2.083,2.083,0,1,1,2.083-2.083A2.086,2.086,0,0,1,16.25,17.5Zm0-3.333a1.25,1.25,0,1,0,1.25,1.25A1.252,1.252,0,0,0,16.25,14.167Z" fill="#fff"/>
+      <path id="Path_1856" data-name="Path 1856" d="M7.083,17.5a2.083,2.083,0,1,1,2.083-2.083A2.086,2.086,0,0,1,7.083,17.5Zm0-3.333a1.25,1.25,0,1,0,1.25,1.25A1.252,1.252,0,0,0,7.083,14.167Z" fill="#fff"/>
+      <path id="Path_1857" data-name="Path 1857" d="M5.417,8.333H2.083a.417.417,0,1,1,0-.833H5.417a.417.417,0,1,1,0,.833Z" fill="#fff"/>
+      <path id="Path_1858" data-name="Path 1858" d="M5.417,10.833H1.25a.417.417,0,1,1,0-.833H5.417a.417.417,0,1,1,0,.833Z" fill="#fff"/>
+      <path id="Path_1859" data-name="Path 1859" d="M5.417,13.333h-5a.417.417,0,1,1,0-.833h5a.417.417,0,1,1,0,.833Z" fill="#fff"/>
+      <path id="Path_1860" data-name="Path 1860" d="M11.667,15.833H8.75a.417.417,0,1,1,0-.833h2.584l1.893-8.333H3.75a.417.417,0,1,1,0-.833h10a.417.417,0,0,1,.407.508l-2.083,9.167a.417.417,0,0,1-.407.325Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

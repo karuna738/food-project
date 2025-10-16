@@ -1,0 +1,387 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.block-chain-scr1 {
+    background-color: #ededed;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: end;
+    min-height: 869px;
+}
+
+.block-chain-img1 {
+    position: absolute;
+    top: 294px;
+    left: 62px;
+    width: calc(100% - 124px);
+}
+
+.block-chain-form1 {
+    height: fit-content;
+    border-radius: 6px;
+    box-shadow: 0 2px 53px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 416px;
+    position: relative;
+    right: 190px;
+    padding: 26px 26px 32px 21px;
+    top: 187px;
+}
+
+.block-chain-form1 input,
+.select-input {
+    width: 369px;
+    height: 42px;
+    border-radius: 3px;
+    border: solid 1px #e1e1e1;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 12px;
+}
+
+.block-chain-form1 label {
+
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    color: #3f568b;
+}
+
+.sign-in,
+.forget-passwords,
+.reset-passwords,
+.rst-pass {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: #222;
+    padding-bottom: 40px;
+}
+
+.forget-passwords {
+    margin-top: 14px;
+}
+
+.block-chain1-submit,
+.block-chain1-login {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    width: 369px;
+    height: 53px;
+    margin: 32px 0 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+    border: none;
+    background-color: #3f568b;
+}
+
+.block-chain1-login {
+    margin-top: 3px;
+}
+
+#block1-email {
+    margin-bottom: 19px;
+}
+
+.input-division {
+    display: grid;
+    gap: 6px;
+}
+
+.forget-password,
+.back,
+.sn-in,
+.sgn-in {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6b87c7;
+    text-align: end;
+    margin-bottom: 19px;
+}
+
+.back {
+    margin-top: 24px;
+    display: inline-block;
+    margin-bottom: 78px;
+}
+
+.sn-in {
+    margin-top: 0;
+    margin-bottom: 78px;
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+.reset-passwords {
+    padding-bottom: 20px;
+}
+
+.block-chain-form1 input:focus,
+.block-chain-form1 input:focus-visible {
+    outline: solid 1px #b1c8ff;
+    padding: 10px 12px;
+}
+
+.reset-para {
+    min-height: 146px;
+}
+
+.reset-para p {
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    color: #3f568b;
+}
+
+.blue-mail {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3f568b;
+}
+
+.rst-pass {
+    padding: 0;
+}
+
+.pass4,
+.confrim-pass4 {
+    margin-top: 24px;
+}
+
+.confrim-pass4 {
+    margin-bottom: 22px;
+}
+
+.sgn-in {
+    margin-top: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.select-input::after {
+    content: "";
+    background: url("/src/public/img/caret-down-copy.svg");
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    background-size: 100%;
+}
+
+.select-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media all and (max-width: 786px) {
+    .block-chain-form1 {
+        position: static;
+        z-index: 2;
+        width: 90%;
+    }
+
+    .block-chain-scr1 {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .block-chain-form1 input,
+    .block-chain-form1 button,
+    .select-input {
+        width: 100%;
+    }
+}
+
+.errorState {
+    border: 1px solid red !important;
+}
+
+//   .password-toggle-icon{
+//     position: absolute;
+//     inset: 1rem 1rem auto auto;
+//   }
+
+.login-wrapper {
+    // min-height: 100vh;
+    // padding: 5rem;
+    // background-color: white;
+    // background-image: url(../../../../../assets/image/login-bg.svg);
+    // background-position: bottom left;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // align-items: flex-start;
+
+    .login-inner {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        min-height: 100vh;
+
+    }
+
+    .login-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 4.0625rem;
+        background-color: #023A43;
+        position: relative;
+        border-top-left-radius: .625rem;
+        border-bottom-left-radius: .625rem;
+
+        .login-col-innr {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // padding-block-start: 5rem;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 5;
+        }
+
+        // img {
+        //     max-width: 426px;
+        // }
+
+        a {
+            text-align: center;
+            font-size: 1.25rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: #FFFFFF;
+            position: relative;
+            z-index: 5;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.4375rem;
+            font-weight: 400;
+            color: #FFFFFF;
+            padding: 0px 2.4375rem;
+        }
+        .grass{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .login-form {
+        // border: solid thin #EFF2F5;
+        // padding: 2rem 1.5rem 2.6125rem;
+        // box-shadow: 0px 16px 32px #1832470B;
+        // border-radius: 0.5rem;
+        max-width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        // background-color: white;
+        .login-logo {
+            // text-align: center;
+            margin-bottom: 2rem;
+
+            h3 {
+                color: #000000;
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 2.4375rem;
+                margin: 0;
+            }
+
+            img {
+                margin-bottom: 2rem;
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 3.3125rem;
+            box-shadow: inset 3px 1px 2px #00000033, 0px 2px 2px #00000024;
+            border-radius: 6px;
+            background: #023A43;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #fff;
+            border: 0;
+            margin-top: 2.5rem;
+
+            &:hover {
+                background-color: #023037;
+            }
+        }
+    }
+}
+
+:host ::ng-deep .errorState1 {
+    .ng-select-container {
+        border: 1px solid red !important;
+    }
+}
+
+.input-field label {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+    color: #212529;
+    margin-bottom: .5rem;
+}
+
+::ng-deep .input-field {
+    .input-group {
+
+        .ng-select.ng-select-opened {
+            .ng-placeholder {
+                transition: none;
+                transform: none !important;
+            }
+
+        }
+
+        .ng-select {
+            .ng-has-value {
+                .ng-placeholder {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

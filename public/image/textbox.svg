@@ -1,0 +1,8 @@
+<svg width="47" height="32" viewBox="0 0 47 32" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <rect stroke="#121212" stroke-width="1.333" fill="#FFF" x=".667" y=".667" width="45.667" height="30.667" rx="3.556"/>
+        <text font-family="TimesNewRomanPSMT, Times New Roman" font-size="18.667" fill="#121212">
+                    <tspan x="17.722" y="22.333">T</tspan>
+                </text>
+    </g>
+</svg>
