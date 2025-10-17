@@ -4,7 +4,7 @@ import { sheredModule } from '../../shared/shered.module';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [sheredModule],
+  imports: [...sheredModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
