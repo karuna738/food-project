@@ -2,39 +2,38 @@
     <div *ngIf="list == 'admin'">
         <aside>
             <div class='aside-logo'>
-                <a [routerLink]="['/dashboard/dashboard']"> <img src='image/logo-white.svg' /> </a>
+                <a [routerLink]="['admin/dashboard']"> <img src='image/logo-white.svg' /> </a>
             </div>
             <div class='aside-nav'>
                 <!-- Dashboard -->
-                <a [routerLink]="['/dashboard']" [routerLinkActive]="'active'">
+                <a [routerLink]="['admin/dashboard']" [routerLinkActive]="'active'">
                     <img src="image/new-Images/MainDashboard.svg" />
                     <img src="image/new-Images/MainDashboard.svg" />
                     <span>{{'header.Dashboard'|translate}}</span>
                 </a>
                 <!--Producer  -->
-                <a [routerLink]="['/Admin/Producer']" [routerLinkActive]="'active'">
+                <a [routerLink]="['/admin/producer']" [routerLinkActive]="'active'">
                     <img src='image/producer.svg' />
                     <img src='image/producer.svg' />
                     <span>{{'commonlist.Producer'|translate}}</span>
                 </a>
 
                 <!-- Processor  -->
-                <a [routerLink]="['/Admin/Processor']" [routerLinkActive]="'active'">
+                <a [routerLink]="['/admin/processor']" [routerLinkActive]="'active'">
                     <img src='image/processor.svg' />
                     <img src='image/processor.svg' />
                     <span>{{'commonlist.Processor'|translate}}</span>
                 </a>
 
                 <!--Distributor  -->
-                <a [routerLink]="['/Admin/Distributor']" [routerLinkActive]="'active'">
+                <a [routerLink]="['/admin/distributer']" [routerLinkActive]="'active'">
                     <img src='image/distributor.svg' />
                     <img src='image/distributor.svg' />
                     <span>{{'commonlist.Distributor'|translate}}</span>
                 </a>
 
-
                 <!-- Retailer -->
-                <a [routerLink]="['/Admin/Retailer']" [routerLinkActive]="'active'">
+                <a [routerLink]="['/admin/retailer']" [routerLinkActive]="'active'">
                     <img src='image/retailer.svg' />
                     <img src='image/retailer.svg' />
                     <span>{{'commonlist.Retailer'|translate}}</span>
@@ -47,7 +46,7 @@
                 </a>
 
                 <!-- Event -->
-                <a [routerLink]="['/Admin/Event']" [routerLinkActive]="'active'">
+                <a [routerLink]="['/admin/Event']" [routerLinkActive]="'active'">
                     <img src='image/event-on.svg' />
                     <img src='image/event-on.svg' />
                     <span>{{'commonlist.Events'|translate}}</span>
@@ -56,6 +55,9 @@
             </div>
         </aside>
     </div>
+
+
+
     <div *ngIf="list == 'Producer'">
         <aside>
             <div class='aside-logo'>
@@ -99,6 +101,7 @@
             </div>
         </aside>
     </div>
+    
     <div *ngIf="list == 'Processing Plant'">
         <aside>
             <div class='aside-logo'>

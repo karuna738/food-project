@@ -1,0 +1,23 @@
+
+<div class='page-container'>
+    <div class='settings-wrapper'>
+        <h3 class='title'>{{'Dashboard.Dashboard'|translate}}</h3>
+        <div class='network-top-row'>
+            <div *ngFor="let element of separate; index as i">
+                <div class='network-card' >
+                    <div class='network-header'>
+                        <div class='network-header-lft'>
+                            <h4>{{element.alias_org}}</h4>
+                            <p>{{'Dashboard.Details'|translate}}</p>
+                        </div>
+                        <div class='network-header-rht'>
+                            <div class='network-header-status'> <img src='image/network-stat-active.svg'/> </div>
+                            <div class='network-header-img'> <img src='image/distribution-ico.webp'/> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
