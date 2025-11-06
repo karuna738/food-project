@@ -20,7 +20,7 @@ export const appConfig: ApplicationConfig = {
     provideToastr({
         timeOut: 1000,
         positionClass: 'toast-top-right',
-        preventDuplicates: false, // Set to false for multiple toasts
+        preventDuplicates: false,
         closeButton: true,
         progressBar: true,
         tapToDismiss: false,

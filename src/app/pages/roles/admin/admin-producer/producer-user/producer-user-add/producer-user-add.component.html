@@ -1,0 +1,264 @@
+<div class="">
+    <app-breadcrumbs></app-breadcrumbs>
+</div>
+<section class="myProfile-container" [formGroup]="loginForm">
+    <h1 class="heading-bold">
+        {{editId ? ('Settings.UpdateProducer'|translate):('Settings.AddProducer'|translate)}} </h1>
+    <div class="shipping-kdes-row p-0">
+        <div class="shipping-heading">
+            <h3><img src="image/basic-detail.svg" alt="">{{'Settings.BasicDetails'|translate}}</h3>
+            <p>{{'Settings.BasicContent'|translate}} </p>
+        </div>
+
+
+        <div class="cont-input-grp">
+            <h4>{{'Settings.ProfileImage'|translate}}</h4>
+            <p>{{'Settings.profileDetails'|translate}}
+            </p>
+            <div class="profile-select">
+                <div class="profile-image-select">
+                    <ng-container *ngIf="uploadfile">
+                        <img [src]="base64Data" alt="profile image" style="width: 6rem; height: 6rem;">
+                    </ng-container>
+                    <ng-container *ngIf="!uploadfile">
+                        <img src="image\profile-default-img.svg" alt="profile image">
+                    </ng-container>
+
+                </div>
+                <div class="profile-btn-grp">
+                    <div class="identifyStage-drop dropdown ">
+
+                        <button type="file" class="dropdown-togg" tabindex="0">
+                            <input type="file" (change)="onProfileImageChange($event)" accept=".png, .jpeg, .jpg">{{'Settings.UploadImage'|translate}} </button>
+                        <button class="remove-img" tabindex="0" (click)="removeImage()">{{'Settings.RemoveImage'|translate}} </button>
+                    </div>
+                    <p>{{'Settings.Atleast'|translate}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="identity-content-details-form">
+
+            <div class="identity-form-row">
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.FullName'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.fulllegal'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input type="text" appSpcaeValidation placeholder=" " autocomplete="off" formControlName="name"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['name'].invalid}">
+                        <label>{{'Settings.EnterFullName'|translate}}</label>
+                    </div>
+
+                </div>
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.Status'|translate}}</h4>
+                    <p>{{'Settings.Toggletoenable'|translate}}
+                    </p>
+
+                    <div _ngcontent-kch-c191="" class="toggle flexx">
+                        <input _ngcontent-kch-c191="" id="cb1" type="checkbox" formControlName="status"
+                            class="tgl tgl-light ng-untouched ng-pristine ng-valid" ng-reflect-name="status"><label
+                            _ngcontent-kch-c191="" for="cb1" class="tgl-btn"
+                            ng-reflect-ng-class="[object Object]"></label>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="identity-form-row">
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.Email'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.validemail'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input type="text" appSpcaeValidation placeholder=" " autocomplete="off" formControlName="email"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['email'].invalid}">
+                        <label>{{'Settings.EnterEmail'|translate}}</label>
+                    </div>
+
+                </div>
+
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.PhoneNumber'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.contactphone'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input type="number" appSpcaeValidation placeholder=" " autocomplete="off" formControlName="phoneNumber"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['phoneNumber'].invalid}">
+                        <label>{{'Settings.EnterPhoneNumber'|translate}}</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="identity-form-row">
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.Address1'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.primaryaddress'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input type="text" appSpcaeValidation placeholder=" " autocomplete="off" formControlName="address1"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['address1'].invalid}">
+                        <label>{{'Settings.EnterAddress1'|translate}}</label>
+                    </div>
+
+                </div>
+
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.Address2'|translate}}</h4>
+                    <p>{{'Settings.additional'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input type="text" appSpcaeValidation placeholder=" " autocomplete="off" formControlName="address2"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['address2'].invalid}">
+                        <label>{{'Settings.EnterAddress2'|translate}}</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="identity-form-row">
+
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.Country'|translate}}</h4>
+                    <p>{{'Settings.located'|translate}}
+                    </p>
+
+                    <div class="input-group">
+                        <ng-select [items]="countryList" bindLabel="name" class="card" placeholder="{{'Settings.EnterCountry'|translate}}"
+                            bindValue="name" formControlName="country" (change)="countryDetail($event)">
+                        </ng-select>
+
+                    </div>
+                </div>
+
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.State'|translate}}</h4>
+                    <p>{{'Settings.region'|translate}}
+                    </p>
+
+                    <div class="input-group">
+                        <ng-select [items]="stateList" bindLabel="name" class="card" placeholder="{{'Settings.EnterState'|translate}}"
+                            bindValue="name" formControlName="state" (change)="stateDetail($event)">
+                        </ng-select>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="identity-form-row">
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.City'|translate}}</h4>
+                    <p>{{'Settings.NetworkParticipant'|translate}}
+                    </p>
+
+                    <div class="input-group">
+                        <ng-select [items]="cityList" bindLabel="name" class="card" placeholder="{{'Settings.EnterCity'|translate}}"
+                            bindValue="name" formControlName="city">
+                        </ng-select>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.PostalCode'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.Enterthepostal'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input type="text" appSpcaeValidation placeholder=" " [readonly]="isEnable" formControlName="postalCode"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['postalCode'].invalid}">
+                        <label>{{'Settings.EnterPostalCode'|translate}}</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div *ngIf="!editId" class="identity-form-row">
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.Password'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.securepassword'|translate}}
+                    </p>
+
+                    <div class="floating-label">
+                        <input appSpcaeValidation  [type]="hidePassword ? 'password' : 'text'" placeholder=" "  formControlName="Password"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['Password'].invalid}">
+                            <span class="password-toggle-icon" (click)="togglePasswordVisibility()">
+                                <img *ngIf="hidePassword" style="position: absolute;inset: 1rem 1rem auto auto;"
+                                    class="password-toggle-icon" src="image/eye-closed.svg"
+                                    alt="Toggle Password Visibility">
+                                <img *ngIf="!hidePassword" style="position: absolute;inset: 1rem 1rem auto auto;"
+                                    class="password-toggle-icon" src="image/eye.svg"
+                                    alt="Toggle Password Visibility">
+                            </span>
+                        <label>{{'Settings.EnterPassword'|translate}}
+                            </label>
+                    </div>
+                    <p *ngIf="submitted && loginForm.controls['Password'].hasError('pattern')" style="color: red;">
+                        *{{'Settings.Thepasswordshouldbeatleast'|translate}}</p>
+                        <div *ngIf="loginForm.get('Password').touched && loginForm.get('Password').invalid" class="red">
+                          <small *ngIf="loginForm.get('Password').errors?.required">{{'Filter.Passwordisrequired'|translate}}</small>
+                          <small *ngIf="loginForm.get('Password').errors?.minlength">{{'Filter.Passwordmustbeatleast8characterslong'|translate}}</small>
+                          <small *ngIf="loginForm.get('Password').errors?.uppercase">{{'Filter.Passwordmustcontainatleastoneuppercaseletter'|translate}}</small>
+                          <small *ngIf="loginForm.get('Password').errors?.number">{{'Filter.Passwordmustcontainatleastonenumber'|translate}}</small>
+                          <small *ngIf="loginForm.get('Password').errors?.specialChar">{{'Filter.Passwordmustcontainatleastonespecialcharacter'|translate}}</small>
+                        </div>
+                </div>
+
+                <div class="cont-input-grp">
+                    <h4>{{'Settings.ConfirmPassword'|translate}}<sup> *</sup></h4>
+                    <p>{{'Settings.Reenter'|translate}}
+                    </p>
+                    <div class="floating-label">
+                        <input appSpcaeValidation  [type]="ConhidePassword ? 'password' : 'text'" placeholder=" " autocomplete="off" formControlName="Confirm"
+                            class="floating-input ng-dirty ng-invalid ng-touched"
+                            [ngClass]=" {'errorState':submitted && loginForm.controls['Confirm'].invalid || submitted && this.loginForm.value.Confirm && this.loginForm.value.Confirm != this.loginForm.value.Password}">
+                            <span class="password-toggle-icon" (click)="togglePasswordVisibilityConfirm()">
+                                <img *ngIf="ConhidePassword" style="position: absolute;inset: 1rem 1rem auto auto;"
+                                    class="password-toggle-icon" src="image/eye-closed.svg"
+                                    alt="Toggle Password Visibility">
+                                <img *ngIf="!ConhidePassword" style="position: absolute;inset: 1rem 1rem auto auto;"
+                                    class="password-toggle-icon" src="image/eye.svg"
+                                    alt="Toggle Password Visibility">
+                            </span>
+                        <label>{{'Settings.EnterConfirmPassword'|translate}}</label>
+                    </div>
+                    <p *ngIf="submitted && this.loginForm.value.Confirm && this.loginForm.value.Confirm != this.loginForm.value.Password" style="color: red;" > *{{'Settings.Passworddoesnotmatch'|translate}}</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="next-prev-row">
+        <button class="prev" tabindex="0" [routerLink]="['/admin/producer/user/userlist']"> {{'Settings.Cancel'|translate}} </button>
+        <button (click)="save()"[disabled]="">{{editId ? ('Settings.UpdateProfile'|translate) : ('Settings.SaveProfile'|translate)}}
+            <div *ngIf="" class="spinner-border spinner-border-sm text-light"
+            role="status">
+            <span class="sr-only"></span>
+        </div>
+        </button>
+    </div>
+
+</section>

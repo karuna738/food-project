@@ -10,10 +10,13 @@ import { BreadcrumbsComponent } from '../common/breadcrumbs/breadcrumbs.componen
 import { TranslateModule } from '@ngx-translate/core';
 import { PaginatorComponent } from '../common/paginator/paginator.component';
 import { AdminDashboardComponent } from '../roles/admin/admin-dashboard/admin-dashboard.component';
-import { AdminProducerComponent } from '../roles/admin/admin-producer/admin-producer.component';
-import { AdminProcessorComponent } from '../roles/admin/admin-processor/admin-processor.component';
-import { AdminDistributerComponent } from '../roles/admin/admin-distributer/admin-distributer.component';
-import { AdminRetailerComponent } from '../roles/admin/admin-retailer/admin-retailer.component';
+import { ProducerUserListComponent } from '../roles/admin/admin-producer/producer-user/producer-user-list/producer-user-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 export const sheredModule: any = [
   // modules
   CommonModule,
@@ -24,6 +27,11 @@ export const sheredModule: any = [
   ReactiveFormsModule,
   NgSelectModule,
   TranslateModule,
+  NgbModule,
+  MatDatepickerModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatNativeDateModule,
 
   // Components
   HeaderComponent,
@@ -34,8 +42,5 @@ export const sheredModule: any = [
   PaginatorComponent,
   HeaderComponent,
   AdminDashboardComponent,
-  AdminProducerComponent,
-  AdminProcessorComponent,
-  AdminDistributerComponent,
-  AdminRetailerComponent,
+  ProducerUserListComponent
 ];

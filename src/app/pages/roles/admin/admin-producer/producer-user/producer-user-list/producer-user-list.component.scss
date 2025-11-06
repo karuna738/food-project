@@ -1,0 +1,10 @@
+.active {
+    color: green;
+  }
+  
+  .pending {
+    color: red;
+  }
+  :host ::ng-deep.mat-form-field-required-marker {
+    display: none;
+  }

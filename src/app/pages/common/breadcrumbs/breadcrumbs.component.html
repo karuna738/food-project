@@ -1,7 +1,8 @@
 <div class="breadcrumbs flex">
     <ng-container *ngFor="let breadcrumb of pageInfo?.urls; let last = last;">
        <a [ngClass]="{'isempty': breadcrumb.url === ''}" (click)="crumbClick(breadcrumb)">
-        {{ breadcrumb.title | translate }}
+        <!-- {{ breadcrumb.title | translate }} -->
+          {{ breadcrumb.title}}
       </a>
         <span *ngIf="!last"> / </span> 
     </ng-container>  

@@ -1,0 +1,261 @@
+<div class="page-container">
+    <div class="identifyStage">
+        <div class="identifyStage-bgLight">
+            <div class="identifyStage-bottom lean-scroll">
+                <div class="">
+                    <app-breadcrumbs></app-breadcrumbs>
+                </div>
+                <div class="shipping-tab">
+                    <button class="created active" (click)="tabChange('pro')">
+                        <span>
+                            <img src="image/created.svg" alt="" class="default-icon">
+                            <img src="image/created-on.svg" alt="" class="on-icon">
+                            {{'farmpage.Producers'|translate}}
+                        </span>
+
+                    </button>
+                    <button class="transferred" (click)="tabChange('owner')">
+                        <span>
+                            <img src="image/Farm-inactive.svg" alt="" class="default-icon">
+                            <img src="image/Farm-active.svg" alt="" class="on-icon">
+                            {{'farmpage.Owner'|translate}}
+                        </span>
+
+                    </button>
+                    <!-- <button class="transferred" [routerLink]="['/Admin/Producer/farmList']">
+                        <span>
+                            <img src="image/Farm-inactive.svg" alt="" class="default-icon">
+                            <img src="image/Farm-active.svg" alt="" class="on-icon">
+                            {{'farmpage.Farms'|translate}}
+                        </span>
+
+                    </button> -->
+                    <button class="consumed" (click)="tabChange('product')">
+                        <span>
+                            <img src="image/crop-inactive.svg" alt="" class="default-icon">
+                            <img src="image/crop-active.svg" alt="" class="on-icon">
+                            {{'farmpage.Product'|translate}}
+                        </span>
+
+                    </button>
+
+                    <!-- <button class="consumed" [routerLink]="['/Admin/Producer/cropList']">
+                        <span>
+                            <img src="image/crop-inactive.svg" alt="" class="default-icon">
+                            <img src="image/crop-active.svg" alt="" class="on-icon">
+                            {{'farmpage.Crops'|translate}}
+                        </span>
+
+                    </button> -->
+
+                    <!-- <button class="consumed" [routerLink]="['/Admin/Producer/cropEvent']">
+                        <span>
+                            <img src="image/crop-inactive.svg" alt="" class="default-icon">
+                            <img src="image/crop-active.svg" alt="" class="on-icon">
+                            {{'farmpage.CropEvents'|translate}}
+                        </span>
+
+                    </button> -->
+                </div>
+                <div class="">
+                    <div class="identifyStage-topHead">
+                        <h1>{{'Filter.ProducerList'|translate}}</h1>
+                        <div class="search-filter-drop">
+                            <div class="search-col">
+                                <input type="text" appSpcaeValidation placeholder="{{'placeholder.TypetoSearch' | translate}}"
+                                    (input)="searchList($event.target)" [(ngModel)]="keyword"
+                                    [ngModelOptions]="{ standalone: true }">
+                                <button class="search-cls" *ngIf="keyword" (click)="searchList('')"> 
+                                    <img src="image/close.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="btn-group" [autoClose]="!dynamicDatechange" ngbDropdown #myDropdown="ngbDropdown">
+                                
+                                <button type="button" style="border: 1px solid black;"
+                                    class="button-reg btn-sm secondary" ngbDropdownToggle>
+                                    <img src="image/funnel-simple.svg" alt="">{{'Filter.Filters'|translate}}
+                                    <span *ngIf="count > 0">{{count}}</span>
+                                </button>
+                                <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-end" [formGroup]="filterForm" 
+                                    onclick="event.stopPropagation()">
+                                    <h4>{{'Filter.QuickFilters'|translate}}</h4>
+
+                                    <div class="inner-filter-row">
+                                        <div class="floating-label">
+                                            <input class="floating-input" appSpcaeValidation type="text" placeholder=" "
+                                                formControlName="Name">
+                                            <label>{{'Filter.EnterName'|translate}}</label>
+                                        </div>
+                                        <div class="floating-label">
+                                            <input class="floating-input" appSpcaeValidation type="text" placeholder=" "
+                                                formControlName="City">
+                                            <label>{{'Filter.EnterCity'|translate}}</label>
+                                        </div>
+                                        <div class="floating-label">
+                                            <input class="floating-input" appSpcaeValidation type="text" placeholder=" "
+                                                formControlName="Email">
+                                            <label>{{'Filter.EnterEmail'|translate}}</label>
+                                        </div>
+                                        <div class="floating-label">
+                                            <input class="floating-input" appSpcaeValidation type="number" placeholder=" "
+                                                formControlName="Phone Number">
+                                            <label>{{'Filter.EnterPhoneNumber'|translate}}</label>
+                                        </div>
+                                        <!-- <div class="floating-label">
+                                            <input class="floating-input" type="text" placeholder=" "
+                                                formControlName="Status">
+                                            <label>Enter Status</label>
+                                        
+                                        </div> -->
+
+                                        <div class="input-group" onclick="event.stopPropagation()">
+                                            <ng-select [items]="Status" bindLabel="name" class="card" bindValue ="id"
+                                                [searchable]="false" placeholder="{{'Filter.EnterStatus'|translate}}"
+                                                formControlName="Status">
+                                            </ng-select>
+                                        </div>
+
+                                        <div class="floating-label">
+                                            <mat-form-field class="floating-date">
+                                                <input matInput (dateChange)="dynamicDatechange = true" [max]="maxToDate" [matDatepicker]="fromDatePicker" readonly placeholder=" "
+                                                    formControlName="From Date">
+                                                <mat-label>{{'Filter.ChooseFromDate'|translate}}</mat-label>
+                                                <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
+                                                <mat-datepicker #fromDatePicker (opened)="onDatepickerOpened()" (closed)="onDatepickerClosed()"></mat-datepicker>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="floating-label">
+                                            <mat-form-field class="floating-date">
+                                                <input matInput (dateChange)="dynamicDatechange = true" [max]="maxToDate" [min]="minToDate" [matDatepicker]="toDatePicker" readonly placeholder=" "
+                                                    formControlName="To Date">
+                                                <mat-label>{{   'Filter.ChooseToDate'|translate}}</mat-label>
+                                                <mat-datepicker-toggle matSuffix
+                                                    [for]="toDatePicker"></mat-datepicker-toggle>
+                                                <mat-datepicker #toDatePicker (opened)="onDatepickerOpened()" (closed)="onDatepickerClosed()"></mat-datepicker>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="filter-save-action flexx">
+                                        <button class="button-reg btn-sm secondary"
+                                            (click)="reset()">{{'Filter.Clearall'|translate}} </button>
+                                        <button class="button-reg btn-sm primary"
+                                            (click)="applyfilter('2')">{{'Filter.Apply'|translate}} </button>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="identifyStage-drop dropdown">
+                                <button class="dropdown-togg" type="button"
+                                    [routerLink]="['/admin/producer/user/useradd']">
+                                    + {{'Filter.AddProducer'|translate}}
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="filter-result-row flexx" *ngIf="count>0">
+                        <h5>{{'Traze.ActiveFilters'|translate}}</h5>
+                        <ng-container *ngFor="let val of formData | keyvalue;let i = index">
+                            <div class="filter-result-col flexx" *ngIf="val.value">
+                                    <span >{{val.key.split('_')[1]}} : </span> 
+                                    {{ 
+                                        (val.key.endsWith('_To Date') || 
+                                         val.key.endsWith('_From Date') || 
+                                         val.key.endsWith('_Date Of Application')) && 
+                                        (val.key.startsWith((i + 1) + '_')) ? 
+                                        (val.value | date: 'dd-MM-YYYY') : val.value 
+                                    }} 
+                                    <a href="javascript:void(0)" (click)="singleClearFilter(val.key.split('_')[1])"> <img src="image/close.svg" alt=""> </a> 
+                            </div>
+                        </ng-container>
+                        <a href="javascript:Void(0)" (click)="reset()"
+                            class="clear">{{'Traze.ClearFilter'|translate}}</a>
+                    </div>
+                    
+                    <div class="p-3">
+                        <div class="table-responsive transaction-tabel">
+                            <table class="table ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">{{'users.Name'|translate}}</th>
+                                        <th scope="col">{{'users.Role'|translate}}</th>
+                                        <th scope="col">{{'users.City'|translate}}</th>
+                                        <th scope="col">{{'users.Email'|translate}}</th>
+                                        <th scope="col">{{'users.Phone'|translate}}</th>
+                                        <th scope="col">{{'users.Createddate'|translate}}</th>
+                                        <th scope="col">{{'users.Status'|translate}}</th>
+                                        <th scope="col"></th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr *ngIf="(datas?.length == 0)">
+                                        <td colspan="12">
+                                            <div class="nodata">
+                                                <span><img src="image/add-data.svg" alt=""></span>
+                                                <div class="nodata-content">
+                                                    <h4>{{'Traze.Datafound'|translate}}!</h4>
+                                                    <p>{{'Filter.CurrentlyProcessor'|translate}}</p>
+                                                    <a href="javascript:void(0)"
+                                                        [routerLink]="['/admin/producer/user/useradd']">
+                                                        {{'Filter.AddProducer'|translate}} </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="">
+                                        <td colspan="12">
+                                            <div class="data-loader">
+                                                <div class="spinner-wrapper">
+                                                    <app-loader
+                                                        [isShow]=""
+                                                        style="position:static"></app-loader>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="dummy" *ngFor="let element of datas">
+                                        <td scope="row">{{element.name}}</td>
+                                        <td scope="row">{{element.aliasOrg}}</td>
+                                        <ng-container *ngIf="!['',null,undefined].includes(element.city)">
+                                            <td scope="row">{{element.city}}</td>
+                                        </ng-container>
+                                        <ng-container *ngIf="['',null,undefined].includes(element.city)">
+                                            <td scope="row">-</td>
+                                        </ng-container>
+                                        <td scope="row">{{element.email}}</td>
+                                        <td scope="row">{{element.phoneNumber}}</td>
+                                        <td scope="row">{{element.createdDate | date : 'dd MMM yyyy h:mm a'}}</td>
+                                        <td> <span
+                                                [ngClass]="{'status': true, 'active': element.isActive === 1, 'pending': element.isActive !== 1}">{{element.isActive==1?'Active':'InActive'}}</span>
+                                        </td>
+                                        <td scope="row">
+                                            <div class="identifyStage-option dropdown">
+                                                <button type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="image/dots-three-vertical-copy.svg" alt="" />
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                    <li><a class="dropdown-item" style="cursor: pointer;"
+                                                            (click)="edit(element.id,element.aliasOrg)">{{'Shipping.Edit'|translate}}</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item " style="cursor: pointer;"
+                                                            (click)="Delete(element)">{{'Shipping.Delete'|translate}}</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div *ngIf="pagecount > 10">
+                            <app-paginator [dataLength]="datas?.length" [type]="'numbers'" [currentPage]="currentPage"
+                                [totalItems]="pagecount" [pageSize]="limit"
+                                (pageChange)="onPageChange($event)"></app-paginator>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
