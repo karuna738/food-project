@@ -35,10 +35,9 @@ export class AdminDashboardComponent implements OnInit {
     },
   ];
   title = 'Dashboard';
-  admin: any;
+  admin: any = 'Admin';
   private titleService = inject(Title);
   ngOnInit(): void {
     this.titleService.setTitle(`${this.title} : FoodTraze ${this.admin}`);
-
   }
 }

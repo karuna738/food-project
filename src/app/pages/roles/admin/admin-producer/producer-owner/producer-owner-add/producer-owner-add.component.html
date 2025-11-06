@@ -1,0 +1,190 @@
+<div class="">
+    <app-breadcrumbs></app-breadcrumbs>
+</div>
+<div [formGroup]="loginForm">
+    <section class="myProfile-container password pb-0">
+        <h1 class="heading-bold">
+            {{editname ? ('farmpage.updateOwner'|translate) : ('farmpage.addOwner'|translate)}}
+        </h1>
+        <div class="shipping-kdes-row p-0">
+            <div class="shipping-heading">
+                <h3><img src="image/farmDetail.svg" alt="">{{'farmpage.ownerDetails'|translate}}</h3>
+                <p>{{'farmpage.thedetails'|translate}} </p>
+            </div>
+            <div class="identity-content-details-form max-w-100">
+                <!-- row1 -->
+                <div class="identity-form-row">
+                    <div class="cont-input-grp">
+                        <h4>{{'farmpage.OwnerName'|translate}}<sup> *</sup></h4>
+                        <p>{{'farmpage.farmwithin'|translate}}</p>
+                        <div class="floating-label"><input type="text" appSpcaeValidation placeholder=" " autocomplete="off"
+                                formControlName="ownerName" class="floating-input ng-dirty ng-invalid ng-touched"
+                                [ngClass]=" {'errorState':submitted && loginForm.controls['ownerName'].invalid}">
+                            <label>{{'farmpage.EnterOwnerName'|translate}}</label>
+                        </div>
+                    </div>
+                    <div class="cont-input-grp">
+                        <h4>{{'farmpage.ProducerName'|translate}}<sup> *</sup></h4>
+                        <p>{{'farmpage.rightproducer'|translate}}
+                        </p>
+                        <div class="input-group">
+                            <ng-select [items]="accesssss" bindLabel="name" bindValue="name"
+                                placeholder="{{'farmpage.ChooseProducerName'|translate}}" [(ngModel)]="listData"
+                                class="card" (change)="maildetail($event)" formControlName="Producer"
+                                [ngClass]=" {'errorState':submitted && loginForm.controls['Producer'].invalid}">
+                            </ng-select>
+                        </div>
+                    </div>
+                </div>
+                <!-- row2 -->
+                <div class="identity-form-row">
+                    <div class="cont-input-grp">
+                        <h4>{{'farmpage.OwnerCategory'|translate}}<sup> *</sup></h4>
+                        <p>{{'farmpage.farmwithin'|translate}}</p>
+                        <div class="floating-label"><input type="text" appSpcaeValidation placeholder=" " autocomplete="off"
+                                formControlName="category" class="floating-input ng-dirty ng-invalid ng-touched"
+                                [ngClass]=" {'errorState':submitted && loginForm.controls['category'].invalid}">
+                            <label>{{'farmpage.EnterCategory'|translate}}</label>
+                        </div>
+                    </div>
+                    <div class="cont-input-grp">
+                        <h4>{{'farmpage.PhoneNumber'|translate}}<sup> *</sup>   </h4>
+                        <p>{{'farmpage.anyqueries'|translate}}
+                        </p>
+                        <div class="floating-label"><input type="number" appSpcaeValidation placeholder=" "
+                                autocomplete="off" formControlName="phoneNumber"
+                                [ngClass]=" {'errorState':submitted && loginForm.controls['phoneNumber'].invalid}"
+                                class="floating-input ng-dirty ng-invalid ng-touched"><label>{{'farmpage.EnterPhoneNumber'|translate}}</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- row3 -->
+                <div class="shipping-kdes-row p-0">
+                    <div class="identity-content-details-form max-w-100">
+                        <div class="identity-form-row row-gap-0">
+                            <div class="cont-input-grp">
+                                <h4>{{'farmpage.OwnerDateOfApplication'|translate}}</h4>
+                                <p>{{'farmpage.maintainingaccurate'|translate}}</p>
+                                <div class="floating-label">
+                                    <mat-form-field class="floating-date">
+                                        <input matInput [max]="maxDate" [matDatepicker]="pickerrs" readonly placeholder=" " formControlName="dateOfApplication">
+                                        <mat-label>{{'farmpage.ChooseOwnerDateOfApplication'|translate}}</mat-label>
+                                        <mat-datepicker-toggle matSuffix [for]="pickerrs"></mat-datepicker-toggle>
+                                        <mat-datepicker #pickerrs></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+
+                            <div class="cont-input-grp">
+                                <h4>{{'farmpage.OwnerLocation'|translate}}</h4>
+                                <p>{{'farmpage.forunderstanding'|translate}}
+                                </p>
+                                <div class="floating-label"><input type="text" appSpcaeValidation placeholder=" "
+                                        autocomplete="off" formControlName="location"
+                                        class="floating-input ng-dirty ng-invalid ng-touched"
+                                        [ngClass]="{'errorState':submitted && loginForm.controls['location'].invalid}">
+                                    <label>{{'farmpage.EnterOwnerLocation'|translate}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row4 -->
+                <div class="shipping-kdes-row p-0">
+                    <div class="identity-content-details-form max-w-100">
+                        <div class="identity-form-row row-gap-0">
+                            <div class="cont-input-grp">
+                                <h4>{{'farmpage.OwnerDescription'|translate}}</h4>
+                                <p>{{'farmpage.detailedaddress'|translate}}
+                                </p>
+                                <div class="floating-label floating-label-address"><textarea type="text" placeholder=" "
+                                        formControlName="Description" appSpcaeValidation class="floating-input ng-dirty ng-invalid ng-touched"
+                                        ng-reflect-name="Address" ng-reflect-ng-class="[object Object]"></textarea>
+                                    <label>{{'farmpage.EnterOwnerDescription'|translate}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row5 -->
+                <div class="identity-form-row">
+                    <div class="cont-input-grp">
+                        <h4>{{'farmpage.OwnerImage'|translate}}</h4>
+                        <p>{{'farmpage.visualinsight'|translate}}</p>
+                        <div class="upload-farm-img">
+                            <input type="file" (change)="onFileSelected($event)" multiple accept=".png, .jpeg, .jpg">
+                            <div class="default-farm-img">
+                                <img src="image\default-farm-img.svg" alt="farm image">
+                                <h5>{{'farmpage.OwnerAddImage'|translate}}</h5>
+                                <span>{{'farmpage.pngformat'|translate}} </span>
+                            </div>
+                        </div>
+                        <div class="uploaded-farm-img" *ngFor="let image of imagebind;let i = index">
+                            <div class="farm-img">
+                                <img [src]="image.imageData" *ngIf="image?.imageData" alt="">
+                                <img *ngIf="!image?.imageData"
+                                    [src]="imageUrl+'?filePath='+image.ImagePath+'&fileName='+image.ImageName" alt="">
+                            </div>
+                            <div class="farm-img-detail">
+                                <h5>{{image.ImageName}}</h5>
+                                <p> <span>{{image.ImageSize}}</span> {{(image.ImageDate | date : ' d MMM yy, h:mm a')}}</p>
+                            </div>
+                            <div class="spinner-border text-success" *ngIf="image.isSpinner" role="status" style="margin-left: auto;">
+                            </div>
+                            <a href="javascript:void(0);" class="uploaded-img" [ngClass]="{'d-none':image.isSpinner}"
+                                (click)="close(i,image?.imageData)">
+                                <img src="image\cancel-img.svg" alt="cancel">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- row6 -->
+                <div class="identity-form-row">
+                    <div class="cont-input-grp">
+                        <div class="cont-input-grp">
+                            <h4>{{'farmpage.OwnerFile'|translate}}</h4>
+                            <p>{{'farmpage.Uploadcopies'|translate}}
+                            </p>
+                            <div class="upload-farm-img">
+                                <input type="file" (change)="onSelected($event)" multiple accept=".pdf,.doc,.docx">
+                                <div class="default-farm-img">
+                                    <img src="image\default-certificate-img.svg" alt="farm image">
+                                    <h5>{{'farmpage.OwnerUploadFiles'|translate}}</h5>
+                                    <span>{{'farmpage.Uploaddocument'|translate}}</span>
+                                </div>
+                            </div>
+                            <div class="uploaded-farm-img" *ngFor="let image of filebind;let i = index">
+                                <div class="farm-img">
+                                    <div class="farm-img downClass" [ngClass]="{'downloaddisable': image.hasOwnProperty('isSpinner')}" (click)="fileDownload(image)" > <img src="image/download-new.svg" alt=""></div>
+                                </div>
+                                <div class="farm-img-detail">
+                                    <h5>{{image.FileName}}</h5>
+                                    <p> <span>{{image.FileSize}}</span> {{(image.FileDate | date : ' d MMM yy, h:mm a')}}
+                                    </p>
+                                </div>
+                                <div class="spinner-border text-success" *ngIf="image.isSpinner" role="status" style="margin-left: auto;">
+                                </div>
+                                <a href="javascript:void(0);" class="uploaded-img" [ngClass]="{'d-none':image.isSpinner}"
+                                    (click)="closefile(i,image?.fileData)">
+                                    <img src="image\cancel-img.svg" alt="cancel">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="myProfile-container password">
+        <div class="next-prev-row"><button class="prev" tabindex="0" [routerLink]="['/Admin/Producer/ownerList']"> X
+                {{'farmpage.Cancel'|translate}} </button>
+            <button (click)="save()" [disabled]="">
+                {{editname ? ('farmpage.Update'|translate) : ('farmpage.Save'|translate)}}
+                <div *ngIf="" class="spinner-border spinner-border-sm text-light"
+                    role="status">
+                    <span class="sr-only"></span>
+                </div>
+            </button>
+        </div>
+    </section>
+</div>
